@@ -30,6 +30,13 @@ export const company = {
   phone: { display: '0221 / 56 08 30 68', href: 'tel:+4922156083068' },
   mobile: { display: '0176 / 24 66 39 20', href: 'tel:+4917624663920' },
   email: 'info@mpb-immobilien.de',
+  // White + teal logo for dark grounds. A dark-on-light SVG would be better for the mobile menu.
+  logo: {
+    src: '/images/brand/logo-light.png',
+    alt: 'MPB Immobilien',
+    width: 676,
+    height: 314,
+  } satisfies ContentImage,
 }
 
 export const navigation: NavItem[] = [

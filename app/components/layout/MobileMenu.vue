@@ -35,7 +35,7 @@ onBeforeUnmount(() => {
     @close="open = false"
   >
     <div class="flex min-h-full flex-col">
-      <div class="container-site flex h-18 shrink-0 items-center justify-between border-b border-line">
+      <div class="container-site flex h-20 shrink-0 items-center justify-between border-b border-line">
         <SiteLogo @click="open = false" />
         <button
           type="button"

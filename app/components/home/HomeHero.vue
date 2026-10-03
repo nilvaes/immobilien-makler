@@ -3,7 +3,10 @@ import { hero, valuationCta } from '~/data/site'
 </script>
 
 <template>
-  <section aria-labelledby="hero-title" class="on-dark relative isolate overflow-hidden bg-night text-white">
+  <section
+    aria-labelledby="hero-title"
+    class="on-dark relative isolate overflow-hidden bg-night text-white"
+  >
     <div class="absolute inset-0 -z-20" aria-hidden="true">
       <NuxtPicture
         :src="hero.backgroundImage"
@@ -21,8 +24,7 @@ import { hero, valuationCta } from '~/data/site'
       aria-hidden="true"
     />
 
-    <!-- Viewport height minus the sticky header (h-18 / lg:h-20). -->
-    <div class="container-site flex min-h-[calc(100svh-4.5rem)] items-center py-20 sm:py-24 lg:min-h-[calc(100svh-5rem)] lg:py-28">
+    <div class="container-site flex min-h-svh items-center pt-32 pb-20 sm:pt-36 sm:pb-24 lg:pt-40 lg:pb-28">
       <div class="max-w-[44rem]">
         <p class="eyebrow flex animate-rise items-center gap-3 text-accent">
           <span class="h-px w-8 bg-accent" aria-hidden="true" />

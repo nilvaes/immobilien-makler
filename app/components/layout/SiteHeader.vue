@@ -20,18 +20,29 @@ onBeforeUnmount(() => {
 
 <template>
   <header
-    class="on-dark sticky top-0 z-40 border-b bg-night text-white transition-colors duration-300"
-    :class="isScrolled ? 'border-white/10' : 'border-transparent'"
+    class="on-dark fixed inset-x-0 top-0 z-40 border-b text-white transition-[background-color,border-color,backdrop-filter,height] duration-300 ease-[cubic-bezier(0.22,0.61,0.36,1)]"
+    :class="
+      isScrolled
+        ? 'border-white/10 bg-night/70 backdrop-blur-md'
+        : 'border-transparent bg-transparent'
+    "
   >
-    <div class="container-site flex h-18 items-center justify-between gap-8 lg:h-20">
-      <SiteLogo tone="light" />
+    <div
+      class="container-site flex items-center justify-between gap-8 transition-[height] duration-300 ease-[cubic-bezier(0.22,0.61,0.36,1)]"
+      :class="isScrolled ? 'h-16 lg:h-18' : 'h-20 lg:h-24'"
+    >
+      <SiteLogo tone="light" :compact="isScrolled" />
 
       <nav aria-label="Hauptnavigation" class="ml-auto hidden lg:block">
-        <ul class="flex items-center gap-7 xl:gap-9">
+        <ul
+          class="flex items-center transition-[gap] duration-300 ease-[cubic-bezier(0.22,0.61,0.36,1)]"
+          :class="isScrolled ? 'gap-6 xl:gap-8' : 'gap-7 xl:gap-9'"
+        >
           <li v-for="item in navigation" :key="item.to">
             <NuxtLink
               :to="item.to"
-              class="text-[0.9375rem] text-white/80 underline decoration-transparent decoration-1 underline-offset-[6px] transition-colors duration-200 hover:text-white hover:decoration-accent"
+              class="text-white/80 underline decoration-transparent decoration-1 underline-offset-[6px] transition-[color,font-size] duration-300 ease-[cubic-bezier(0.22,0.61,0.36,1)] hover:text-white hover:decoration-accent"
+              :class="isScrolled ? 'text-[0.875rem]' : 'text-[0.9375rem]'"
             >
               {{ item.label }}
             </NuxtLink>

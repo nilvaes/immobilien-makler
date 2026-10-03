@@ -81,6 +81,7 @@
   }
 
   body {
+    margin: 0;
     background-color: var(--color-paper);
     color: var(--color-ink);
     font-family: var(--font-sans);

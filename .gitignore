@@ -25,4 +25,5 @@ logs
 .env.*
 !.env.example
 
-.PLANNING.md
+# Local planning notes (not for the remote)
+PLANNING.md

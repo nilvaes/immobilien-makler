@@ -77,12 +77,12 @@ export const broker = {
   name: 'Marc Philip Broichheuser',
   role: 'Immobilienmakler in Köln',
   portrait: {
-    src: '/images/makler/marc-philip-broichheuser.jpg',
-    alt: 'Porträt von Marc Philip Broichheuser im dunklen Sakko',
-    width: 1122,
-    height: 1402,
+    // Interim composite. TODO(client): replace with a real on-location shoot.
+    src: '/images/makler/marc-ueber-mich-portrait.jpg',
+    alt: 'Marc Philip Broichheuser vor einer modernen Innenraumkulisse mit Stadtblick',
+    width: 598,
+    height: 852,
   } satisfies ContentImage,
-  // TODO(client): interim studio portrait from the current site – replace with on-location shoot.
 }
 
 export const about = {
@@ -102,12 +102,11 @@ export const about = {
     },
   ] satisfies ContentText[],
   facts: [
-    // TODO(client): confirm start year. The current Impressum dates the § 34c licence to 02.12.2008,
-    // which is not necessarily the start of brokerage activity.
-    { value: 'Seit [Jahr]', label: 'in der Immobilienvermittlung tätig', placeholder: true },
+    // TODO(client): confirm before launch — currently mirrored from the live site, not independently verified.
+    { value: '10+', label: 'Jahre Erfahrung', placeholder: true },
+    // TODO(client): confirm before launch — currently mirrored from the live site, not independently verified.
+    { value: '150+', label: 'Verkäufe', placeholder: true },
     { value: 'Köln & Umgebung', label: 'Regionale Betreuung' },
-    // Confirmed by the current Impressum: "Gewerbeanmeldung nach § 34c GewO … durch die Stadt Köln erteilt".
-    { value: '§ 34c GewO', label: 'Erlaubnis erteilt durch die Stadt Köln' },
   ] satisfies TrustFact[],
   link: { label: 'Persönlich kennenlernen', to: '/#kontakt' },
 }

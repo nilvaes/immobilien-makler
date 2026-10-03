@@ -44,13 +44,17 @@ export const navigation: NavItem[] = [
   { label: 'Referenzen', to: '/#referenzen' },
   { label: 'Immobilien', to: '/#immobilien' },
   { label: 'Über mich', to: '/#ueber-mich' },
-  { label: 'Kontakt', to: '/#kontakt' },
 ]
 
 export const valuationCta = {
   label: 'Immobilie bewerten lassen',
   shortLabel: 'Immobilie bewerten',
   to: '/#bewertung',
+}
+
+export const contactCta = {
+  label: 'Kontakt aufnehmen',
+  to: '/#kontakt',
 }
 
 export const hero = {

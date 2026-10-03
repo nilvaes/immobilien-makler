@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { company, navigation, valuationCta } from '~/data/site'
+import { company, contactCta, navigation } from '~/data/site'
 
 const open = defineModel<boolean>('open', { required: true })
 const dialog = useTemplateRef<HTMLDialogElement>('dialog')
@@ -65,8 +65,8 @@ onBeforeUnmount(() => {
       </nav>
 
       <div class="container-site space-y-6 pt-10 pb-10">
-        <BaseButton :to="valuationCta.to" class="w-full" @click="open = false">
-          {{ valuationCta.label }}
+        <BaseButton :to="contactCta.to" variant="accent" class="w-full" @click="open = false">
+          {{ contactCta.label }}
         </BaseButton>
         <dl class="grid grid-cols-2 gap-4 text-[0.9375rem]">
           <div>

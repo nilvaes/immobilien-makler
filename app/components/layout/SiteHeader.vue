@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { navigation, valuationCta } from '~/data/site'
+import { contactCta, navigation } from '~/data/site'
 
 const isScrolled = ref(false)
 const isMenuOpen = ref(false)
@@ -50,9 +50,12 @@ onBeforeUnmount(() => {
         </ul>
       </nav>
 
-      <BaseButton :to="valuationCta.to" size="sm" variant="accent" class="hidden lg:inline-flex">
-        {{ valuationCta.shortLabel }}
-      </BaseButton>
+      <NuxtLink
+        :to="contactCta.to"
+        class="hidden text-[0.9375rem] font-semibold tracking-[0.02em] text-accent underline decoration-accent decoration-2 underline-offset-[6px] transition-colors duration-200 hover:text-white hover:decoration-white lg:inline-flex"
+      >
+        {{ contactCta.label }}
+      </NuxtLink>
 
       <button
         type="button"

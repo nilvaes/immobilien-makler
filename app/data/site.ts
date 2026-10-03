@@ -66,10 +66,10 @@ export const hero = {
   // TODO: copy into /public/images before launch instead of loading it from the current live site.
   backgroundImage: 'https://mpb-immobilien.de/images/hero-home.jpg',
   services: [
-    { label: 'Verkauf', to: '/#leistungen' },
-    { label: 'Vermietung', to: '/#leistungen' },
+    { label: 'Verkauf', to: '/#verkauf' },
+    { label: 'Vermietung', to: '/#vermietung' },
     { label: 'Bewertung', to: '/#bewertung' },
-    { label: 'Immobilienfotografie', to: '/#leistungen' },
+    { label: 'Immobilienfotografie', to: '/#verkauf' },
   ] satisfies NavItem[],
 }
 
@@ -109,4 +109,68 @@ export const about = {
     { value: 'Köln & Umgebung', label: 'Regionale Betreuung' },
   ] satisfies TrustFact[],
   link: { label: 'Persönlich kennenlernen', to: '/#kontakt' },
+}
+
+export interface ServiceItem {
+  id: string
+  number: string
+  title: string
+  summary: string
+  bullets: string[]
+  link: NavItem
+  placeholder?: boolean
+}
+
+export const services = {
+  eyebrow: 'Leistungen',
+  titleLines: ['Drei Leistungen.', 'Ein persönlicher Ansprechpartner.'],
+  intro:
+    'Ob Verkauf, Vermietung oder Bewertung – ich begleite Sie in Köln und Umgebung mit einem klaren Prozess und direkter Erreichbarkeit.',
+  items: [
+    {
+      id: 'verkauf',
+      number: '01',
+      title: 'Verkauf',
+      // TODO(client): confirm wording — derived from the current website.
+      summary: 'Strategisch und zielgerichtet – vom ersten Exposé bis zur Notarunterschrift.',
+      placeholder: true,
+      bullets: [
+        'Marktgerechte Preisfindung und Verkaufsstrategie',
+        'Professionelle Fotos und starkes Exposé',
+        'Vorqualifizierte Interessenten und Verhandlungsführung',
+        'Begleitung bis zum Notartermin und zur Übergabe',
+      ],
+      link: { label: 'Verkauf besprechen', to: '/#kontakt' },
+    },
+    {
+      id: 'vermietung',
+      number: '02',
+      title: 'Vermietung',
+      // TODO(client): confirm wording — derived from the current website.
+      summary: 'Die richtigen Mieter finden – sicher, sorgfältig und rechtssicher vermittelt.',
+      placeholder: true,
+      bullets: [
+        'Zielgruppengenaue Vermarktung Ihrer Immobilie',
+        'Auswahl und Prüfung geeigneter Interessenten',
+        'Transparente Abstimmung vor Vertragsabschluss',
+        'Entlastung im gesamten Vermietungsprozess',
+      ],
+      link: { label: 'Vermietung besprechen', to: '/#kontakt' },
+    },
+    {
+      id: 'bewertung',
+      number: '03',
+      title: 'Bewertung',
+      // TODO(client): confirm format (Marktwertinschätzung vs. Gutachten), price and turnaround.
+      summary: 'Fundierte Markteinschätzung als Grundlage für Ihre nächste Entscheidung.',
+      placeholder: true,
+      bullets: [
+        'Einschätzung nach Lage, Zustand und aktueller Marktlage',
+        'Persönliches Gespräch statt anonymer Online-Rechner',
+        'Klare Einordnung für Verkauf, Vermietung oder Orientierung',
+        'Unverbindlicher Einstieg in die Zusammenarbeit',
+      ],
+      link: { label: 'Immobilie bewerten lassen', to: '/#bewertung' },
+    },
+  ] satisfies ServiceItem[],
 }

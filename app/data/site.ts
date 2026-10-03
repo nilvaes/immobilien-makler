@@ -61,6 +61,12 @@ export const hero = {
   secondaryLink: { label: 'Referenzen ansehen', to: '/#referenzen' },
   // TODO: copy into /public/images before launch instead of loading it from the current live site.
   backgroundImage: 'https://mpb-immobilien.de/images/hero-home.jpg',
+  services: [
+    { label: 'Verkauf', to: '/#leistungen' },
+    { label: 'Vermietung', to: '/#leistungen' },
+    { label: 'Bewertung', to: '/#bewertung' },
+    { label: 'Immobilienfotografie', to: '/#leistungen' },
+  ] satisfies NavItem[],
 }
 
 export const broker = {

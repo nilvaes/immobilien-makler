@@ -23,7 +23,7 @@ onBeforeUnmount(() => {
     class="on-dark fixed inset-x-0 top-0 z-40 border-b text-white transition-[background-color,border-color,backdrop-filter,height] duration-300 ease-[cubic-bezier(0.22,0.61,0.36,1)]"
     :class="
       isScrolled
-        ? 'border-white/10 bg-night/70 backdrop-blur-md'
+        ? 'border-white/10 bg-night/90 backdrop-blur-md'
         : 'border-transparent bg-transparent'
     "
   >

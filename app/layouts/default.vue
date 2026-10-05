@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import SiteFooter from '~/components/layout/SiteFooter.vue'
+</script>
+
 <template>
   <div>
     <a
@@ -10,5 +14,6 @@
     <main id="inhalt">
       <slot />
     </main>
+    <SiteFooter />
   </div>
 </template>

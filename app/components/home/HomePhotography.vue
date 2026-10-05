@@ -26,7 +26,7 @@ import { conceptImages, photography } from '~/data/concept'
             </li>
           </ul>
           <div class="mt-9">
-            <TextLink to="/#referenzen" arrow tone="light">Zur Objektgalerie</TextLink>
+            <TextLink to="/referenz-fotografien" arrow tone="light">Zur Fotogalerie</TextLink>
           </div>
         </div>
 

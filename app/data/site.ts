@@ -106,7 +106,7 @@ export const about = {
     { value: '10+', label: 'Jahre Erfahrung', placeholder: true },
     // TODO(client): confirm before launch — currently mirrored from the live site, not independently verified.
     { value: '150+', label: 'Verkäufe', placeholder: true },
-    { value: 'Köln & Umgebung', label: 'Regionale Betreuung' },
+    { value: '100%', label: 'Kundenzufriedenheit' },
   ] satisfies TrustFact[],
   link: { label: 'Persönlich kennenlernen', to: '/#kontakt' },
 }

@@ -12,7 +12,6 @@
   --color-accent: #1ccadf;
   --color-accent-ink: #0b7280;
 
-  --font-serif: 'Newsreader', 'Iowan Old Style', Georgia, serif;
   --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
 
   --text-display: clamp(2.5rem, 1.6rem + 2.9vw, 4.25rem);
@@ -95,8 +94,8 @@
   h1,
   h2,
   h3 {
-    font-family: var(--font-serif);
-    font-weight: 400;
+    font-family: var(--font-sans);
+    font-weight: 600;
     text-wrap: balance;
   }
 

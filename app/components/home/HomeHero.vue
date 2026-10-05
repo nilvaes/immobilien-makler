@@ -34,7 +34,7 @@ import { hero, valuationCta } from '~/data/site'
 
           <h1 id="hero-title" class="mt-6 animate-rise text-display [animation-delay:80ms] lg:mt-8">
             <span class="block">{{ hero.titleLines[0] }}</span>
-            <span class="block text-accent italic">{{ hero.titleLines[1] }}</span>
+            <span class="block text-accent">{{ hero.titleLines[1] }}</span>
           </h1>
 
           <p class="mt-6 max-w-[34rem] animate-rise text-lead text-white/80 [animation-delay:160ms] lg:mt-7">

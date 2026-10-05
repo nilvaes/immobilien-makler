@@ -27,13 +27,14 @@ export default defineNuxtConfig({
   },
 
   fonts: {
+    // Nuxt Fonts downloads provider fonts and serves them from this site's own origin.
+    // Keep this self-hosted setup instead of adding Google Fonts CDN links to app.head.
     defaults: {
       weights: [400, 500, 600],
       styles: ['normal'],
       subsets: ['latin', 'latin-ext'],
     },
     families: [
-      { name: 'Newsreader', provider: 'google', weights: [400, 500], styles: ['normal', 'italic'] },
       { name: 'Instrument Sans', provider: 'google', weights: [400, 500, 600] },
     ],
   },

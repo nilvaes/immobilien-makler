@@ -55,7 +55,7 @@ onBeforeUnmount(() => {
           <li v-for="item in navigation" :key="item.to" class="border-b border-line">
             <NuxtLink
               :to="item.to"
-              class="block py-4 font-serif text-[1.875rem] leading-tight"
+              class="block py-4 font-sans text-[1.875rem] leading-tight"
               @click="open = false"
             >
               {{ item.label }}

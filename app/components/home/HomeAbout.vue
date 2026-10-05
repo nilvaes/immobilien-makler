@@ -52,7 +52,7 @@ import { about, broker } from '~/data/site'
 
           <h2 id="about-title" class="text-heading">
             <span class="block">{{ about.titleLines[0] }}</span>
-            <span class="block italic text-night/80">{{ about.titleLines[1] }}</span>
+            <span class="block text-night/80">{{ about.titleLines[1] }}</span>
           </h2>
 
           <div class="border-l-2 border-accent pl-5">
@@ -76,11 +76,13 @@ import { about, broker } from '~/data/site'
         <div
           v-for="fact in about.facts"
           :key="fact.label"
-          class="flex flex-col-reverse bg-paper px-5 py-6"
+          class="flex flex-col-reverse bg-paper px-5 py-7 sm:px-6 sm:py-8"
           :data-placeholder="fact.placeholder || undefined"
         >
-          <dt class="mt-2 text-[0.8125rem] leading-snug text-muted">{{ fact.label }}</dt>
-          <dd class="font-serif text-[1.375rem] leading-tight text-accent-ink">{{ fact.value }}</dd>
+          <dt class="mt-2.5 text-[0.9375rem] leading-snug text-muted">{{ fact.label }}</dt>
+          <dd class="font-sans text-[1.875rem] font-semibold leading-none tracking-[-0.025em] text-accent-ink sm:text-[2.125rem]">
+            <CountUp :value="fact.value" />
+          </dd>
         </div>
       </dl>
 

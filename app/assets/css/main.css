@@ -131,6 +131,17 @@
 }
 
 @layer components {
+  /* Zoom only the image, keeping its frame and captions still. */
+  @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+    .image-zoom > img {
+      transition: transform 650ms var(--ease-out-soft);
+    }
+
+    .image-zoom:hover > img {
+      transform: scale(1.045);
+    }
+  }
+
   /* Added client-side by the v-reveal directive, so content stays visible without JS. */
   .reveal {
     opacity: 0;

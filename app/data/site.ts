@@ -69,7 +69,7 @@ export const hero = {
     { label: 'Verkauf', to: '/#verkauf' },
     { label: 'Vermietung', to: '/#vermietung' },
     { label: 'Bewertung', to: '/#bewertung' },
-    { label: 'Immobilienfotografie', to: '/#verkauf' },
+    { label: 'Immobilienfotografie', to: '/#fotografie' },
   ] satisfies NavItem[],
 }
 

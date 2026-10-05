@@ -123,22 +123,19 @@ export interface ServiceItem {
 
 export const services = {
   eyebrow: 'Leistungen',
-  titleLines: ['Drei Leistungen.', 'Ein persönlicher Ansprechpartner.'],
-  intro:
-    'Ob Verkauf, Vermietung oder Bewertung – ich begleite Sie in Köln und Umgebung mit einem klaren Prozess und direkter Erreichbarkeit.',
+  titleLines: ['Für Ihre Immobilie.', 'Für Ihren nächsten Schritt.'],
   items: [
     {
       id: 'verkauf',
       number: '01',
       title: 'Verkauf',
       // TODO(client): confirm wording — derived from the current website.
-      summary: 'Strategisch und zielgerichtet – vom ersten Exposé bis zur Notarunterschrift.',
+      summary: 'Ihre Immobilie überzeugend vermarktet. Vom ersten Exposé bis zur Übergabe.',
       placeholder: true,
       bullets: [
-        'Marktgerechte Preisfindung und Verkaufsstrategie',
-        'Professionelle Fotos und starkes Exposé',
-        'Vorqualifizierte Interessenten und Verhandlungsführung',
-        'Begleitung bis zum Notartermin und zur Übergabe',
+        'Marktgerechter Preis & Verkaufsstrategie',
+        'Professionelle Fotos & Exposé',
+        'Interessentenprüfung & Begleitung zum Notar',
       ],
       link: { label: 'Verkauf besprechen', to: '/#kontakt' },
     },
@@ -147,13 +144,12 @@ export const services = {
       number: '02',
       title: 'Vermietung',
       // TODO(client): confirm wording — derived from the current website.
-      summary: 'Die richtigen Mieter finden – sicher, sorgfältig und rechtssicher vermittelt.',
+      summary: 'Passende Mieter finden. Mit sorgfältiger Auswahl und weniger Aufwand für Sie.',
       placeholder: true,
       bullets: [
-        'Zielgruppengenaue Vermarktung Ihrer Immobilie',
-        'Auswahl und Prüfung geeigneter Interessenten',
-        'Transparente Abstimmung vor Vertragsabschluss',
-        'Entlastung im gesamten Vermietungsprozess',
+        'Gezielte Vermarktung',
+        'Sorgfältige Prüfung der Interessenten',
+        'Begleitung bis zum Vertragsabschluss',
       ],
       link: { label: 'Vermietung besprechen', to: '/#kontakt' },
     },
@@ -162,15 +158,14 @@ export const services = {
       number: '03',
       title: 'Bewertung',
       // TODO(client): confirm format (Marktwertinschätzung vs. Gutachten), price and turnaround.
-      summary: 'Fundierte Markteinschätzung als Grundlage für Ihre nächste Entscheidung.',
+      summary: 'Wissen, was Ihre Immobilie wert ist. Als Grundlage für Ihre nächste Entscheidung.',
       placeholder: true,
       bullets: [
-        'Einschätzung nach Lage, Zustand und aktueller Marktlage',
-        'Persönliches Gespräch statt anonymer Online-Rechner',
-        'Klare Einordnung für Verkauf, Vermietung oder Orientierung',
-        'Unverbindlicher Einstieg in die Zusammenarbeit',
+        'Lage, Zustand & Markt im Blick',
+        'Persönliche Einschätzung',
+        'Unverbindlich ins Gespräch kommen',
       ],
-      link: { label: 'Immobilie bewerten lassen', to: '/#bewertung' },
+      link: { label: 'Immobilie bewerten lassen', to: valuationCta.to },
     },
   ] satisfies ServiceItem[],
 }

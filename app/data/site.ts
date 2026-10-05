@@ -49,7 +49,7 @@ export const navigation: NavItem[] = [
 export const valuationCta = {
   label: 'Immobilie bewerten lassen',
   shortLabel: 'Immobilie bewerten',
-  to: '/#immobilienbewertung',
+  to: '/#kontakt',
 }
 
 export const contactCta = {

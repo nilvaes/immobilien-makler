@@ -11,5 +11,5 @@ const items = [
 </script>
 
 <template>
-  <LegalDraft title="Datenschutz" intro="Die Datenschutzhinweise werden auf die endgültige technische Umsetzung und die tatsächlich eingesetzten Dienste abgestimmt. Das Demoformular in dieser Konzeptvorschau versendet keine Daten." :items="items" />
+  <LegalDraft title="Datenschutz" intro="Die Datenschutzhinweise werden auf die endgültige technische Umsetzung und die tatsächlich eingesetzten Dienste abgestimmt." :items="items" />
 </template>

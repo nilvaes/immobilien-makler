@@ -24,9 +24,9 @@
   --text-lead--line-height: 1.55;
   --text-body: clamp(1.0625rem, 1.03rem + 0.12vw, 1.125rem);
   --text-body--line-height: 1.65;
-  --text-eyebrow: 0.75rem;
-  --text-eyebrow--line-height: 1;
-  --text-eyebrow--letter-spacing: 0.16em;
+  --text-eyebrow: clamp(0.875rem, 0.8rem + 0.25vw, 1rem);
+  --text-eyebrow--line-height: 1.4;
+  --text-eyebrow--letter-spacing: 0.12em;
 
   --ease-out-soft: cubic-bezier(0.22, 0.61, 0.36, 1);
 
@@ -65,7 +65,7 @@
   font-size: var(--text-eyebrow);
   line-height: var(--text-eyebrow--line-height);
   letter-spacing: var(--text-eyebrow--letter-spacing);
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -131,26 +131,6 @@
 }
 
 @layer components {
-  .enquiry-input {
-    width: 100%;
-    min-height: 3rem;
-    border: 1px solid var(--color-line);
-    border-radius: 0.5rem;
-    background-color: var(--color-paper);
-    padding: 0.75rem;
-    color: var(--color-ink);
-    font-size: 0.875rem;
-    line-height: 1.5;
-  }
-
-  .enquiry-input::placeholder {
-    color: var(--color-muted);
-  }
-
-  .enquiry-input:focus {
-    border-color: var(--color-accent-ink);
-  }
-
   /* Zoom only the image, keeping its frame and captions still. */
   @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
     .image-zoom > img {

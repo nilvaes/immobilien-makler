@@ -131,6 +131,26 @@
 }
 
 @layer components {
+  .enquiry-input {
+    width: 100%;
+    min-height: 3rem;
+    border: 1px solid var(--color-line);
+    border-radius: 0.5rem;
+    background-color: var(--color-paper);
+    padding: 0.75rem;
+    color: var(--color-ink);
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .enquiry-input::placeholder {
+    color: var(--color-muted);
+  }
+
+  .enquiry-input:focus {
+    border-color: var(--color-accent-ink);
+  }
+
   /* Zoom only the image, keeping its frame and captions still. */
   @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
     .image-zoom > img {

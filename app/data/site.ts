@@ -49,7 +49,7 @@ export const navigation: NavItem[] = [
 export const valuationCta = {
   label: 'Immobilie bewerten lassen',
   shortLabel: 'Immobilie bewerten',
-  to: '/#bewertung',
+  to: '/#immobilienbewertung',
 }
 
 export const contactCta = {
@@ -168,4 +168,62 @@ export const services = {
       link: { label: 'Immobilie bewerten lassen', to: valuationCta.to },
     },
   ] satisfies ServiceItem[],
+}
+
+export const process = {
+  eyebrow: 'So arbeiten wir',
+  titleLines: ['Von der ersten Frage', 'bis zur Übergabe.'],
+  // TODO(client): approve these concise descriptions of the workflow before launch.
+  placeholder: true,
+  steps: [
+    {
+      number: '01',
+      title: 'Kennenlernen & einschätzen',
+      text: 'Wir besprechen Ihre Ziele und schauen gemeinsam auf Ihre Immobilie und die aktuelle Marktlage.',
+    },
+    {
+      number: '02',
+      title: 'Planen & präsentieren',
+      text: 'Eine passende Strategie, professionelle Bilder und ein klares Exposé bilden die Grundlage der Vermarktung.',
+    },
+    {
+      number: '03',
+      title: 'Besichtigen & verhandeln',
+      text: 'Interessenten werden geprüft, Besichtigungen koordiniert und die nächsten Schritte mit Ihnen abgestimmt.',
+    },
+    {
+      number: '04',
+      title: 'Abschließen & übergeben',
+      text: 'Vom Vertragsabschluss bis zur Übergabe bleibt die Begleitung persönlich – beim Verkauf auch beim Notartermin.',
+    },
+  ],
+}
+
+export const faq = {
+  eyebrow: 'Häufige Fragen',
+  titleLines: ['Ihre Fragen.', 'Klar beantwortet.'],
+  // TODO(client): approve these general answers and adapt them to Marc's offer before launch.
+  placeholder: true,
+  items: [
+    {
+      question: 'Wie wird der Wert meiner Immobilie eingeschätzt?',
+      answer: 'Lage, Größe, Zustand und Ausstattung werden zusammen mit der aktuellen Marktlage betrachtet. Ein persönliches Gespräch und ein Blick auf die Immobilie helfen, diese Faktoren einzuordnen und eine nachvollziehbare Einschätzung zu erhalten.',
+    },
+    {
+      question: 'Welche Unterlagen brauche ich für den Verkauf?',
+      answer: 'Hilfreich sind zum Beispiel ein Grundriss, Angaben zur Wohnfläche, ein Grundbuchauszug und ein Energieausweis. Je nach Immobilie kommen weitere Unterlagen hinzu. Im ersten Gespräch lässt sich klären, was bereits vorliegt und was noch benötigt wird.',
+    },
+    {
+      question: 'Wie lange dauert es, eine Immobilie zu verkaufen?',
+      answer: 'Das hängt unter anderem von Lage, Zustand, Angebotspreis und Nachfrage ab. Eine feste Dauer lässt sich vorab nicht versprechen. Nach einer ersten Einschätzung können der Ablauf und ein realistischer Zeitrahmen gemeinsam besprochen werden.',
+    },
+    {
+      question: 'Wie wird die Maklerprovision vereinbart?',
+      answer: 'Die Provision und ihre Verteilung hängen von der Art des Geschäfts und den geltenden Vorgaben ab. Die konkreten Konditionen werden vor einer Beauftragung besprochen und vertraglich festgehalten.',
+    },
+    {
+      question: 'Kann ich mich melden, wenn ich noch unentschlossen bin?',
+      answer: 'Ja. Sie müssen noch keinen festen Verkaufs- oder Vermietungsplan haben. Ein erstes Gespräch kann helfen, Ihre Fragen zu sortieren und mögliche nächste Schritte zu besprechen.',
+    },
+  ],
 }

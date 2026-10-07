@@ -13,13 +13,13 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: 'de' },
-      title: 'MPB Immobilien – Immobilienmakler in Köln',
+      title: 'Muster Immobilien – Immobilienmakler in Köln',
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
           name: 'description',
           content:
-            'Marc Philip Broichheuser, Immobilienmakler in Köln. Persönliche Begleitung beim Verkauf, der Vermietung und der Bewertung Ihrer Immobilie.',
+            'Max Mustermann, Immobilienmakler in Köln. Persönliche Begleitung beim Verkauf, der Vermietung und der Bewertung Ihrer Immobilie.',
         },
         { name: 'theme-color', content: '#0a1224' },
       ],
@@ -42,7 +42,7 @@ export default defineNuxtConfig({
   image: {
     quality: 78,
     format: ['avif', 'webp'],
-    domains: ['mpb-immobilien.de'],
+    domains: [],
   },
 
   vite: {

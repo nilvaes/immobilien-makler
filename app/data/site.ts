@@ -26,23 +26,23 @@ export interface TrustFact {
 }
 
 export const company = {
-  name: 'MPB Immobilien',
-  phone: { display: '0221 / 56 08 30 68', href: 'tel:+4922156083068' },
-  mobile: { display: '0176 / 24 66 39 20', href: 'tel:+4917624663920' },
-  email: 'info@mpb-immobilien.de',
-  // White + teal logo for dark grounds. A dark-on-light SVG would be better for the mobile menu.
+  name: 'Muster Immobilien',
+  phone: { display: '0000 / 123 45 67', href: 'tel:+490001234567' },
+  mobile: { display: '0000 / 765 43 21', href: 'tel:+490007654321' },
+  email: 'info@muster-immobilien.example',
+  // Fictional identity and non-deliverable sample contact details for the portfolio demo.
   logo: {
-    src: '/images/brand/logo-light.png',
-    alt: 'MPB Immobilien',
-    width: 676,
-    height: 314,
+    src: '/images/brand/muster-logo.svg',
+    alt: 'Muster Immobilien',
+    width: 360,
+    height: 100,
   } satisfies ContentImage,
 }
 
 export const navigation: NavItem[] = [
   { label: 'Leistungen', to: '/#leistungen' },
   { label: 'Referenzen', to: '/#referenzen' },
-  { label: 'Immobilien', to: '/#immobilien' },
+  { label: 'Fotogalerie', to: '/referenz-fotografien' },
   { label: 'Über mich', to: '/#ueber-mich' },
 ]
 
@@ -61,10 +61,10 @@ export const hero = {
   eyebrow: 'Immobilienmakler · Köln',
   titleLines: ['Immobilien in Köln.', 'Persönlich vermarktet.'],
   intro:
-    'Ich bin Marc Philip Broichheuser. Wenn Sie Ihre Immobilie verkaufen, vermieten oder ihren Wert kennen möchten, begleite ich Sie persönlich – vom ersten Gespräch bis zur Übergabe.',
+    'Ich bin Max Mustermann. Wenn Sie Ihre Immobilie verkaufen, vermieten oder ihren Wert kennen möchten, begleite ich Sie persönlich – vom ersten Gespräch bis zur Übergabe.',
   secondaryLink: { label: 'Referenzen ansehen', to: '/#referenzen' },
-  // TODO: copy into /public/images before launch instead of loading it from the current live site.
-  backgroundImage: 'https://mpb-immobilien.de/images/hero-home.jpg',
+  // Locally hosted, licensed stock image for the portfolio template.
+  backgroundImage: '/images/concept/residential-facade.jpg',
   services: [
     { label: 'Verkauf', to: '/#verkauf' },
     { label: 'Vermietung', to: '/#vermietung' },
@@ -74,14 +74,14 @@ export const hero = {
 }
 
 export const broker = {
-  name: 'Marc Philip Broichheuser',
+  name: 'Max Mustermann',
   role: 'Immobilienmakler in Köln',
   portrait: {
-    // Interim composite. TODO(client): replace with a real on-location shoot.
-    src: '/images/makler/marc-ueber-mich-portrait.jpg',
-    alt: 'Marc Philip Broichheuser vor einer modernen Innenraumkulisse mit Stadtblick',
-    width: 598,
-    height: 852,
+    // Neutral illustration for the fictional broker; replace when adapting the template.
+    src: '/images/makler/muster-portrait.svg',
+    alt: 'Illustration als Musterporträt für Max Mustermann',
+    width: 600,
+    height: 750,
   } satisfies ContentImage,
 }
 
@@ -92,7 +92,7 @@ export const about = {
     {
       // TODO(client): temporary copy – replace with approved personal introduction
       // (Werdegang, Weg in die Immobilienbranche, Bezug zu Köln).
-      text: 'Hinter MPB Immobilien stehe ich persönlich. Vom ersten Gespräch bis zur Übergabe haben Sie einen Ansprechpartner, der Ihre Immobilie und Ihre Ziele kennt.',
+      text: 'Hinter Muster Immobilien stehe ich persönlich. Vom ersten Gespräch bis zur Übergabe haben Sie einen Ansprechpartner, der Ihre Immobilie und Ihre Ziele kennt.',
       placeholder: true,
     },
     {
@@ -106,7 +106,7 @@ export const about = {
     { value: '10+', label: 'Jahre Erfahrung', placeholder: true },
     // TODO(client): confirm before launch — currently mirrored from the live site, not independently verified.
     { value: '150+', label: 'Verkäufe', placeholder: true },
-    { value: '100%', label: 'Kundenzufriedenheit' },
+    { value: '100%', label: 'Kundenzufriedenheit', placeholder: true },
   ] satisfies TrustFact[],
   link: { label: 'Persönlich kennenlernen', to: '/#kontakt' },
 }
@@ -202,7 +202,7 @@ export const process = {
 export const faq = {
   eyebrow: 'Häufige Fragen',
   titleLines: ['Ihre Fragen.', 'Klar beantwortet.'],
-  // TODO(client): approve these general answers and adapt them to Marc's offer before launch.
+  // TODO(client): approve these general answers and adapt them to the template offer before launch.
   placeholder: true,
   items: [
     {

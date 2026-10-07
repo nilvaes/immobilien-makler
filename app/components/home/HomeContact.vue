@@ -29,6 +29,7 @@ import { broker, company } from '~/data/site'
             </div>
           </div>
 
+          <p class="mt-5 text-xs text-white/60">Portfolio-Demo · Fiktive Kontaktdaten</p>
           <address class="not-italic">
             <a :href="company.phone.href" class="contact-channel group flex items-center justify-between gap-4 border-b border-white/15 py-7">
               <span>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import LegalDraft from '~/components/layout/LegalDraft.vue'
 
-useHead({ title: 'Datenschutz – Entwurf | MPB Immobilien', meta: [{ name: 'robots', content: 'noindex, nofollow' }] })
+useHead({ title: 'Datenschutz – Entwurf | Muster Immobilien', meta: [{ name: 'robots', content: 'noindex, nofollow' }] })
 const items = [
   'Verantwortlicher und Kontakt für Datenschutzanliegen.',
   'Informationen zur tatsächlichen Hosting- und Serverkonfiguration.',

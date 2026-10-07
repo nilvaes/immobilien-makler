@@ -1,7 +1,7 @@
 # Concept photography
 
-Downloaded on 2026-10-05 from Pexels for the MPB redesign concept.
-These are stock photos, not MPB properties, transactions, or commissioned photography.
+Downloaded on 2026-10-05 from Pexels for the fictional portfolio template.
+These are stock photos, not Muster properties, transactions, or commissioned photography.
 No changes beyond provider resizing/compression and responsive display cropping.
 
 License: https://www.pexels.com/license/ (free website use; attribution not required).
@@ -15,4 +15,4 @@ Keep this source record when replacing or moving assets.
 | residential-facade.jpg | Markus Winkler | https://www.pexels.com/photo/elegant-european-residential-building-facade-32478753/ |
 
 To replace: update `app/data/concept.ts` with approved photographs, dimensions, and alt text.
-Only remove example labels once authentic MPB reference details are supplied and approved.
+Only remove example labels once authentic sample reference details are supplied and approved.

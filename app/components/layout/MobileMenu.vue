@@ -39,6 +39,7 @@ onBeforeUnmount(() => {
         <SiteLogo @click="open = false" />
         <button
           type="button"
+          autofocus
           class="-mr-2 inline-flex h-11 items-center gap-3 px-2 text-[0.9375rem] font-medium"
           @click="open = false"
         >
@@ -71,11 +72,11 @@ onBeforeUnmount(() => {
         <dl class="grid grid-cols-2 gap-4 text-[0.9375rem]">
           <div>
             <dt class="eyebrow text-muted">Telefon</dt>
-            <dd class="mt-2"><a :href="company.phone.href" class="underline decoration-line underline-offset-4">{{ company.phone.display }}</a></dd>
+            <dd class="mt-2"><a :href="company.phone.href" class="inline-flex min-h-11 items-center underline decoration-line underline-offset-4">{{ company.phone.display }}</a></dd>
           </div>
           <div>
             <dt class="eyebrow text-muted">E-Mail</dt>
-            <dd class="mt-2"><a :href="`mailto:${company.email}`" class="underline decoration-line underline-offset-4">{{ company.email }}</a></dd>
+            <dd class="mt-2"><a :href="`mailto:${company.email}`" class="inline-flex min-h-11 items-center break-all underline decoration-line underline-offset-4">{{ company.email }}</a></dd>
           </div>
         </dl>
       </div>
@@ -95,6 +96,12 @@ onBeforeUnmount(() => {
 @keyframes menu-in {
   from {
     opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobile-menu[open] {
+    animation: none;
   }
 }
 </style>

@@ -2,7 +2,7 @@
 import PhotoGallery from '~/components/gallery/PhotoGallery.vue'
 import { conceptImages } from '~/data/concept'
 
-useHead({ title: 'Immobilienfotografie – Konzeptgalerie | MPB Immobilien' })
+useHead({ title: 'Immobilienfotografie – Konzeptgalerie | Muster Immobilien' })
 
 const photos = [
   { title: 'Licht & Weite', image: conceptImages.living },
@@ -20,7 +20,7 @@ const photos = [
         <p class="eyebrow text-accent-ink">Fotografie · Konzeptgalerie</p>
         <h1 class="mt-5 text-display">Räume zeigen.<br><span class="text-accent-ink">Atmosphäre spürbar machen.</span></h1>
         <p class="mt-6 max-w-xl text-base leading-relaxed text-muted">Licht, Perspektive und die Details, die eine Immobilie besonders machen. Entdecken Sie die Bilder in voller Größe.</p>
-        <p class="mt-5 max-w-xl border-l-2 border-accent pl-4 text-sm leading-relaxed text-muted">Stockfotos zur Gestaltung dieser Konzeptvorschau. Keine Aufnahmen oder Referenzen von MPB Immobilien.</p>
+        <p class="mt-5 max-w-xl border-l-2 border-accent pl-4 text-sm leading-relaxed text-muted">Stockfotografie für diese fiktive Portfolio-Demo. Keine tatsächlich vermittelten Immobilien.</p>
       </header>
 
       <PhotoGallery :images="photos" />

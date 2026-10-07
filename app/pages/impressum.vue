@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import LegalDraft from '~/components/layout/LegalDraft.vue'
 
-useHead({ title: 'Impressum – Entwurf | MPB Immobilien', meta: [{ name: 'robots', content: 'noindex, nofollow' }] })
+useHead({ title: 'Impressum – Entwurf | Muster Immobilien', meta: [{ name: 'robots', content: 'noindex, nofollow' }] })
 const items = [
   'Bestätigte Angaben zum Anbieter, zur Anschrift und zu den Kontaktmöglichkeiten.',
   'Zutreffende Register-, Steuer- und berufsbezogene Angaben.',

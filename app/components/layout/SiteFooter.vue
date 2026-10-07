@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { company } from '~/data/site'
+import { broker, company } from '~/data/site'
 
 const footerLinks = [
   { label: 'Leistungen', to: '/#leistungen' },
@@ -29,14 +29,14 @@ const footerLinks = [
         </nav>
         <div>
           <h2 class="text-sm font-semibold text-white/50">Direkter Kontakt</h2>
-          <p class="mt-5 text-sm">Marc Philip Broichheuser</p>
+          <p class="mt-5 text-sm">{{ broker.name }}</p>
           <a :href="company.phone.href" class="mt-2 flex min-h-11 items-center text-sm text-white/80 transition-colors duration-300 hover:text-accent">{{ company.phone.display }}</a>
           <a :href="`mailto:${company.email}`" class="flex min-h-11 items-center break-all text-sm text-white/80 transition-colors duration-300 hover:text-accent">{{ company.email }}</a>
           <NuxtLink to="/#kontakt" class="mt-4 inline-flex min-h-11 items-center gap-3 text-sm font-semibold text-accent transition-colors duration-300 hover:text-white">Kontakt aufnehmen <span aria-hidden="true">↗</span></NuxtLink>
         </div>
       </div>
       <div class="flex flex-col gap-4 border-t border-white/10 py-6 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
-        <p>MPB Immobilien · Konzeptvorschau</p>
+        <p>{{ company.name }} · Portfolio-Demo</p>
         <nav aria-label="Rechtliche Informationen" class="flex gap-6">
           <NuxtLink to="/impressum" class="inline-flex min-h-11 items-center transition-colors duration-300 hover:text-white">Impressum</NuxtLink>
           <NuxtLink to="/datenschutz" class="inline-flex min-h-11 items-center transition-colors duration-300 hover:text-white">Datenschutz</NuxtLink>

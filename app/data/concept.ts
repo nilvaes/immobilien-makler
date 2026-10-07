@@ -5,7 +5,7 @@ export interface ConceptImage extends ContentImage {
   source: string
 }
 
-// Stock photography for the private concept preview, not MPB properties or work.
+// Stock photography for the private concept preview, not Muster properties or work.
 // Replace these entries with approved client images before presenting real references.
 export const conceptImages = {
   living: {
@@ -51,7 +51,7 @@ export const photography = {
     { title: 'Details sichtbar machen', text: 'Ein stimmiger Blick auf das, was Ihr Zuhause auszeichnet.' },
     { title: 'Klar präsentieren', text: 'Aussagekräftige Bilder und übersichtliche Informationen.' },
   ],
-  previewNote: 'Beispielbilder zur Gestaltung. Keine Aufnahmen von MPB Immobilien.',
+  previewNote: 'Stockfotografie für diese fiktive Portfolio-Demo.',
 }
 
 export interface ConceptProperty {
@@ -67,7 +67,7 @@ export const referencePreview = {
   eyebrow: 'Referenzen · Konzeptvorschau',
   titleLines: ['Jede Immobilie', 'hat ihren eigenen Charakter.'],
   intro: 'So könnten ausgewählte Referenzen hier präsentiert werden: mit starken Bildern und dem Blick für das Wesentliche.',
-  note: 'Beispielobjekte mit Stockfotos – keine vermittelten Immobilien von MPB. Echte Referenzen folgen nach Abstimmung.',
+  note: 'Fiktive Objektbeispiele mit Stockfotos für dieses Portfolio-Projekt. Keine tatsächlich vermittelten Immobilien.',
   items: [
     { id: 'wohnen-licht', title: 'Licht & Weite', category: 'Wohnung · Innenansicht', description: 'Offene Räume, natürliche Materialien und viel Tageslicht.', image: conceptImages.living, placeholder: true },
     { id: 'wohnen-charakter', title: 'Wohnen mit Charakter', category: 'Wohnung · Innenansicht', description: 'Hohe Fenster und individuelle Details schaffen Atmosphäre.', image: conceptImages.apartment, placeholder: true },

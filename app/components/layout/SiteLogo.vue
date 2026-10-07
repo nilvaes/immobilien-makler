@@ -16,7 +16,7 @@ withDefaults(
     class="inline-flex shrink-0 items-center"
     :aria-label="`${company.name} – Startseite`"
   >
-    <!-- White/teal logo for dark grounds. On light grounds, brightness-0 yields a solid dark mark until a dedicated dark logo exists. -->
+    <!-- Template logo; dark version uses the same vector with a monochrome treatment. -->
     <NuxtImg
       :src="company.logo.src"
       :alt="company.logo.alt"

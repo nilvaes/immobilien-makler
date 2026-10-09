@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { ConceptProperty } from '~/data/concept'
-defineProps<{ property: ConceptProperty }>()
+defineProps<{ property: ConceptProperty; to?: string }>()
 </script>
 
 <template>
@@ -13,6 +13,7 @@ defineProps<{ property: ConceptProperty }>()
       <p class="text-xs font-medium tracking-[0.06em] text-accent-ink">{{ property.category }}</p>
       <h3 class="mt-3 text-xl leading-tight tracking-[-0.02em]">{{ property.title }}</h3>
       <p class="mt-3 text-sm leading-relaxed text-muted">{{ property.description }}</p>
+      <NuxtLink v-if="to" :to="to" class="mt-4 inline-flex min-h-11 items-center gap-3 text-sm font-semibold text-accent-ink">Objekt ansehen <span aria-hidden="true">↗</span><span class="sr-only">: {{ property.title }}</span></NuxtLink>
     </div>
   </article>
 </template>

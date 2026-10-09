@@ -20,10 +20,11 @@ import { referencePreview } from '~/data/concept'
       </header>
       <ul class="mt-10 grid gap-5 md:grid-cols-2 lg:mt-12 lg:grid-cols-3">
         <li v-for="(property, index) in referencePreview.items" :key="property.id" v-reveal="index * 100">
-          <PropertyPreviewCard :property="property" />
+          <PropertyPreviewCard :property="property" :to="`/referenzobjekte/${property.id}`" />
         </li>
       </ul>
       <p class="mt-7 max-w-3xl text-xs leading-relaxed text-muted">{{ referencePreview.note }}</p>
+      <NuxtLink to="/referenzobjekte" class="mt-5 inline-flex min-h-11 items-center gap-3 font-semibold text-accent-ink">Alle Beispielobjekte ansehen <span aria-hidden="true">↗</span></NuxtLink>
     </div>
   </section>
 </template>

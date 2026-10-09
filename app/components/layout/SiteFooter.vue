@@ -4,6 +4,7 @@ import { broker, company } from '~/data/site'
 const footerLinks = [
   { label: 'Leistungen', to: '/#leistungen' },
   { label: 'Referenzen', to: '/#referenzen' },
+  { label: 'Referenzobjekte', to: '/referenzobjekte' },
   { label: 'Fotogalerie', to: '/referenz-fotografien' },
   { label: 'Über mich', to: '/#ueber-mich' },
   { label: 'Häufige Fragen', to: '/#faq' },

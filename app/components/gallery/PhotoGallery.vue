@@ -2,6 +2,8 @@
 import type { ConceptImage } from '~/data/concept'
 
 const props = defineProps<{ images: { title: string; image: ConceptImage }[] }>()
+const baseURL = useRuntimeConfig().app.baseURL
+const imageUrl = (src: string) => `${baseURL.replace(/\/$/, '')}/${src.replace(/^\//, '')}`
 const dialog = useTemplateRef<HTMLDialogElement>('viewer')
 const activeIndex = ref(0)
 const activePhoto = computed(() => props.images[activeIndex.value])
@@ -56,7 +58,7 @@ function endSwipe(event: TouchEvent) {
       </header>
       <div class="flex min-h-0 flex-1 items-center justify-center px-3 sm:px-16" @touchstart.passive="startSwipe" @touchend.passive="endSwipe" @touchcancel="touchStart = undefined">
         <Transition name="photo" mode="out-in">
-          <img v-if="activePhoto" :key="activePhoto.image.src" :src="activePhoto.image.src" :alt="activePhoto.image.alt" :width="activePhoto.image.width" :height="activePhoto.image.height" class="max-h-full max-w-full object-contain" draggable="false">
+          <img v-if="activePhoto" :key="activePhoto.image.src" :src="imageUrl(activePhoto.image.src)" :alt="activePhoto.image.alt" :width="activePhoto.image.width" :height="activePhoto.image.height" class="max-h-full max-w-full object-contain" draggable="false">
         </Transition>
       </div>
       <div class="flex shrink-0 items-center justify-between gap-4 px-5 py-5 sm:px-8">
